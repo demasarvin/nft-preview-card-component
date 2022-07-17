@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.container {
+  margin: 15px;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 15px;
+  border-radius: 15px;
+  width: 300px;
+}
+
+.head-card img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.body-card p {
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(0, 0%, 50%);
+}
+
+.tag {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(0, 0%, 50%);
+  padding-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  gap: 10px;
+  font-weight: 400;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+hr {
+  border-color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 50%);
+}
+
+.creator{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: hsl(0, 0%, 50%);
+}
+
+.creator img {
+    width: 25px;
+    border: 2px solid hsl(0, 0%, 50%);
+    border-radius: 50%;
+}
+.creator .name{
+    color: hsl(0, 0%, 100%);
+}
