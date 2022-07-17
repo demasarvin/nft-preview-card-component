@@ -7,10 +7,10 @@ body {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .container {
   margin: 15px;
@@ -24,10 +24,60 @@ main {
   width: 300px;
 }
 
-.head-card img {
+.head-card {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.image {
   width: 300px;
   height: 300px;
   border-radius: 10px;
+  display: block;
+}
+
+.view {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.icon-view {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.head-card:hover .view {
+  opacity: 0.5;
+  cursor: pointer;
+  background-color: hsl(178, 100%, 50%);
+}
+
+.head-card:hover .icon-view {
+  opacity: 1;
+}
+
+.body-card a {
+  font-size: 24px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.body-card a:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .body-card p {
@@ -65,19 +115,25 @@ hr {
   background-color: hsl(0, 0%, 50%);
 }
 
-.creator{
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: hsl(0, 0%, 50%);
+.creator {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(0, 0%, 50%);
 }
 
 .creator img {
-    width: 25px;
-    border: 2px solid hsl(0, 0%, 50%);
-    border-radius: 50%;
+  width: 25px;
+  border: 2px solid hsl(0, 0%, 50%);
+  border-radius: 50%;
 }
-.creator .name{
-    color: hsl(0, 0%, 100%);
+.creator a {
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+}
+
+.creator .name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
